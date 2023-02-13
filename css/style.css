@@ -1,0 +1,904 @@
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1330px;
+}
+
+
+
+
+.top-box{
+
+    display:flex;
+  
+    height:50px;
+  
+    justify-content: flex-end;
+  
+    align-items: center;
+  
+    list-style:none;
+  
+    margin:0;
+  
+    padding:0;
+  
+  }
+
+  .top-box>li{
+
+    position:relative;
+  
+  }
+
+
+.top a{
+    color: #666;
+    text-decoration: none;
+}
+
+/**top **/
+a.login{
+    border: 1px solid #e4e4e4;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 30px;
+
+}
+.mail{
+    margin-right: 30px;
+}
+
+a.grid a.mail{
+    display: block;
+}
+
+.mail span{
+    color: #888;
+}
+
+.mail span:hover{
+    color: #333;
+}
+.top span{
+    color: #888;
+
+}
+.top span:hover{
+    color: #333;
+    cursor: pointer;
+
+}
+#gview{
+    position: relative;
+}
+
+.sub{
+
+    position: absolute;
+    top: 40px;
+    left: -356px;
+    border: 1px solid #888;
+    z-index:200;
+    display: none;
+    background-color: #fff;
+}
+
+.tri{
+    position: absolute;
+    z-index: 3;
+    top: -18px;
+    right: 3px;
+
+}
+
+
+.submenu{
+    margin-top: 15px;
+    margin-bottom: 0px;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    border-bottom: 1px solid #e4e4e4;
+  
+}
+.submenu li , .submenu2 li{
+    list-style: none;
+    
+  
+}
+
+.submenu a{
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+.minibox{
+    display: flex;
+    margin-top: 0;
+    width: 380px;
+}
+
+.submenu2{
+ margin-top: 10px;
+ margin-bottom: 10px;
+ padding: 0;
+ border-right: 1px solid #e4e4e4;
+ width: 25%;
+ flex-flow: row wrap;
+}
+
+.submenu2 a{
+    font-size: 12px;
+   
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+
+.bottom-menu{
+    text-align: center;
+    display: block;
+    height: 56px;
+    background-color: rgb(243, 243, 243);
+    line-height: 56px;
+    font-size: 14px;
+    border-top: 1px solid #e4e4e4;
+}
+
+.sub a:hover{
+    text-decoration: underline;
+}
+
+.submenu img{
+    width: 35px;
+
+}
+/*gnb 영역*/
+
+
+
+.logo{
+    float: left;
+}
+
+
+ul.gnbnav{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 50%;
+    font-size: 18px;
+    float: left;
+    margin-left: 50px;
+}
+
+ul.gnbnav li>span{
+    display: inline-block;
+    width: 1px;
+    height: 16px;
+    background-color: #e4e4e4;
+    margin-top: 10px;
+}
+
+ul.gnbnav li{
+    float: left;
+    margin-right: 25px;
+}
+ul.gnbnav li a{
+    text-decoration: none;
+    line-height: 36px;
+    color: #2b2b2b;
+}
+
+ul.gnbnav>li a:hover{
+    color: #ff5858;
+    font-weight: 500;
+}
+.searchform{
+    float: right;
+}
+
+ul.gnbnav li a.red{
+    color: #ff5858;
+}
+.active{
+    font-weight: 500;
+}
+
+form.searchform{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    padding-top: 12px;
+    position: relative;
+
+}
+.searchbtn{
+    position: absolute;
+    right: 0;
+    z-index: 100;
+}
+form.searchform select{
+    border: none;
+}
+
+/*포커스 잡히는 것은 모두 아웃라인 none 시켜주라는 명령*/
+form.searchform *:focus{
+    outline: none;
+}
+
+input.searchtxt{
+    margin-left: 15px;
+    border: none;
+    width: 230px;
+}
+
+/* section latest*/
+
+.latest{
+    clear: both;
+    border-bottom:5px solid black ;
+    position: relative;
+}
+
+.latest .container{
+    padding-bottom: 100px;
+    background: url(../images/ebichu.png) no-repeat right bottom;
+    background-size: 25%;
+}
+
+.latest-txt{
+    list-style:none;
+    padding: 0;
+    margin: 0;
+    
+}
+.latest-txt span{
+    font-size: 12px;
+    vertical-align: top;
+    display: inline-block;
+    color: #999;
+    max-width: 90px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin:  5px 0 0 10px;
+    
+
+
+}
+
+.latest-txt li{
+    text-decoration: none;
+    font-size: 48px;
+    color: #2b2b2b;
+    font-weight: 300;
+    /* width: 650px; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    line-height: 65px;
+}
+.latest-txt a:hover{
+    font-weight: 700;
+}
+
+.latest-txt li.active a{
+    font-weight: 700;
+    color: #333;
+}
+
+a,a:link{
+    color: #666;
+    text-decoration: none;
+}
+
+.latest h1{
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.latest h1 span{
+    font-weight: 200;
+
+}
+
+.left, .right{
+    position: absolute;
+    top: 30%;
+
+}
+
+.left{
+left: 70px;
+}
+
+.right{
+    right: 50px;
+
+}
+.left span,.right span{
+    font-size: 150px;
+}
+
+/************
+section first
+**********/
+
+.first{
+    padding : 80px 0px ;
+    background-color: #ededed;
+    border-bottom: 1px solid #e4e4e4;
+}
+a.card{
+    display: flex;
+    height: 115px;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.03);
+    padding:15px 25px;
+    margin-bottom: 30px;
+    transition: all 300ms;
+}
+
+a.card:hover{
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.2),
+                0 1px 4px 0 rgba(0,0,0,0.1);
+
+}
+
+
+
+a.card-make{
+    display: flex;
+    height: 115px;
+    border: 1px dashed #e1e1e1;
+    background-color: #ededed;
+    border-radius: 5px;
+    padding:15px 25px;
+
+}
+
+.card-content.make{
+    padding: 14px 0px;
+}
+
+a.card-make:hover{
+background-color: #f5f5f5;
+}
+
+a.card img, a.card-make img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    align-self: center; /*자기 자신이 가짐*/
+
+}
+
+
+.card-content{
+    vertical-align: middle;
+    width: calc(100% - 70px);
+    margin: 0;
+    padding: 0;
+    
+}
+
+.card-content h1{
+    font-size: 15px;
+    font-weight: normal;
+    color: #333;
+    margin: 0;
+    padding-left: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+.card-content p{
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.hash{
+    margin: 0;
+    font-size: 15px;
+      padding-left: 20px;
+}
+.hash span{
+    margin-right: 4px;
+  
+}
+.hash span:first-child{
+    color: red;
+
+}
+.hash span::before{
+    content: '#';
+}
+
+
+
+
+
+/************
+section second
+**********/
+.second{
+    padding: 50px 0;
+}
+
+
+.title-group h1,.title-group p{
+margin: 0;
+}
+.title-group h1{
+    font-size: 20px;
+
+}
+
+.title-group span{
+    font-weight: bold;
+    
+}
+
+.title-group{
+    display: flex;
+    justify-content: space-between;
+
+}
+ul.list-pop{
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.list-pop li{
+    padding:5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.list-pop p{
+ margin: 0;
+}
+
+.list-pop li a{
+display: flex;
+align-items: center;
+}
+
+.list-pop li:hover{
+    background-color: rgb(243, 243, 243);
+}
+
+.list-pop>li{
+    display: flex;
+}
+
+.list-pop img{
+    width: 105px;
+    height: 105px;
+    object-fit: cover;
+
+}
+.list-pop span{
+    margin-right: 10px;
+}
+
+.pop-content{
+    width:  calc(100% - 315px); 
+    padding: 30px;
+    font-size: 20px;
+
+}
+
+.pop-info,
+.pop-comment{
+    width: 105px;
+    padding-right:20px ;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.pop-comment span{
+
+    margin-left:5px;
+    font-weight:bold;
+    color:#ff5656;
+
+}
+
+ 
+
+.pop-comment>span{
+    margin-right: 10px;
+
+}
+
+
+/*페이징*/
+
+.paging{
+    width: 150px;
+    margin-left: auto;
+    margin-left: auto;
+    margin: 30px auto;
+}
+
+a.none{
+    color: #ddd;
+}
+
+.paging span{ 
+  /* float: left; */
+  vertical-align: top; /*정렬*/
+  margin-left: 5px;
+  margin-right: 5px;
+
+}
+
+/*콘텐츠 오른쪽*/
+
+.right-title{
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+}
+
+.info{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 50px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+
+}
+
+.info a:hover{
+    text-decoration: underline;
+
+}
+
+
+.info li:not(:first-child){
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.info li:first-child{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.boxa{
+    height: 250px;
+    background-color: #4260aa;
+    border: 1px solid #333;
+    /* background-color: #ED6D6E; */
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+.boxa h2{
+    font-size: 26px;
+    width: 200px;
+    color: #fff;
+    margin-left: 25px;
+    padding-top: 22px;
+    white-space: pre-line;
+}
+
+/*그림*/
+div.drow{
+    position: absolute;
+    z-index: 500;
+    width: 270px;
+    height: 250px;
+    border-radius: 50%;
+    border: 3px solid #333;
+    background-color: #fff;
+    left: 210px;
+    top: 60px;
+    
+}
+
+.l-eyes,.r-eyes{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #333;
+}
+
+.l-eyes{
+z-index: 600;
+position: absolute;
+left: 100px;
+top: 95px;
+
+}
+
+.r-eyes{
+z-index: 600;
+position: absolute;
+left: 145px;
+top: 95px;
+
+} 
+
+.mouse{
+    width: 55px;
+    height: 50px;
+    background-color: #95dbf788;
+    border-radius: 50px;
+    z-index: 600;
+position: absolute;
+left: 102px;
+top: 106px;
+overflow: hidden;
+
+}
+
+.mouse-l{
+    
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 4px solid #333;
+    border-radius: 50px;
+    position: absolute;
+left: 24px;
+top: -10px;
+    
+}
+
+
+.mouse-r{
+    
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 4px solid #333;
+    border-radius: 50px;
+    position: absolute;
+    left: -2px;
+    top: -10px;
+        
+}
+
+
+/*팬카페*/
+.f-titlebox{
+    display: flex;
+    justify-content: space-between;
+}
+.f-titlebox a{
+    display: block;
+    margin-top: 8px;
+}
+
+
+.f-titlebox a:hover{
+ text-decoration: underline;
+}
+
+.fan-title{
+    font-size: 22px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.no1{
+    position: absolute;
+    z-index: 100;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.692);
+    color: #fff;
+    font-size: 28px;
+  
+  
+}
+
+.no1 p{
+    margin: 0;
+    text-align: center;
+    padding-top: 8px;
+
+}
+
+.fanbig-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fancafe{
+    width: 400px;
+    height: 340px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.fancafe:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.fanimg{
+    width: 400px;
+    height: 230px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.fantxt{
+
+    display: flex;
+    padding: 0px 10px;
+    background-color: #fff;
+    height: 100%;
+}
+
+.fantxt img{
+    width: 65px;
+    height: 65px;
+    z-index: 50;
+    border-radius: 56%;
+    margin-top: 20px;
+    margin-left: 10px;
+
+}
+.fantxt-name{
+    margin-left: 20px;
+    margin-top: 22px;
+
+}
+
+.fantxt-name p{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.fantxt-name span{
+    float: left;
+    margin-right: 20px;
+    font-size: 14px;
+  
+}
+
+
+.redbox{
+    width: 5px;
+    height: 5px;
+    background-color: red;
+}
+
+
+/**카테고리 별 **/
+
+.subtitle{
+    margin: 60px 0px;
+}
+
+.subtitle span{
+    font-weight: normal;
+}
+
+.star-category{
+    overflow: auto;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+
+}
+
+.star-category li{
+    font-size: 32px;
+    font-weight: 300;
+    margin-right: 50px;
+    float: left;
+    height: 60px;
+}
+.star-category a{
+    margin-right: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+
+/*태그에 커서 올리면 빨간 밑줄 그어지는 거*/
+/*애니메이션*/
+.star-category a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 4px;
+    background-color: #ff5656;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: bottom right;
+
+}
+.star-category a:hover::before{
+    transform: scaleX(1) ;
+    transform-origin: bottom left;
+}
+
+
+
+.star-category li a.untitle{
+    font-weight: 700;
+    color: #333;
+}
+
+
+
+
+/*풋터*/
+
+footer.container{
+    margin-top:100px;
+    padding-top:30px;
+    min-height:130px;
+    background: url('../images/ebichu.png') no-repeat right bottom;
+    background-size: 200px auto;
+    background-color: #fff;
+
+}
+
+footer.container img{
+    display: block;
+    margin-bottom: 4px;
+    padding-left: 4px;
+
+}
+
+footer.container a{
+    padding-right: 4px;
+    font-size: 13px;
+    
+}
+
+.copy{
+    padding-left: 4px;
+
+}
+
+footer.container a:hover{
+    text-decoration: underline;
+
+}
+
+ 
